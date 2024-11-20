@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+
+/*Header*/
+.head{ 
+    width: 1200px; 
+    height: 80px; 
+    margin: auto; 
+    margin-top: 40px; 
+    margin-bottom: 40px; 
+    padding: 0 50px 0 50px; 
+    box-shadow: 0 5px 20px rgba(80,80,80,.2); 
+    
+    
+   } 
+    
+   .head .logo{ 
+    float: left; 
+    height: 100%; 
+   } 
+    
+   .head nav{ 
+    float: left; 
+    margin-left: 100px; 
+    height: 100%; 
+    text-decoration: none;
+
+   } 
+   .head nav div{ 
+    display: inline-block; 
+    height: 100%; 
+    position: relative; 
+    
+   } 
+   .head nav div:hover ul{ 
+    display: block; 
+    
+   } 
+   .head nav div ul{ 
+    list-style: none;
+    padding: 0;
+    width: 180px; 
+    background: #fff; 
+    display: none; 
+    position: absolute; 
+    top: 60px;
+
+    
+   } 
+   .head nav div ul a{
+    display: block; 
+    width: 100%; 
+    height: 100%; 
+    padding: 10px 20px; 
+    border-bottom: 1px solid #E7E7E7; 
+    box-sizing: border-box;
+    text-decoration: none;
+    
+    transition-property: color, background-color; 
+      transition-duration: 300ms; 
+   } 
+   .head nav div ul a:hover{ 
+    background-color: #FFD000; 
+    color: #fff; 
+   } 
+    
+   .head .logo a, 
+   .head nav div > a, 
+   .head .login a{ 
+    display: inline-block; 
+    width: 100%; 
+    height: 100%; 
+    text-decoration: none;
+    
+    transition-property: color; 
+      transition-duration: 300ms; 
+   } 
+   .head .logo a{ 
+    font-size: 1.6em; 
+    color: #FFD000; 
+    padding: 25px 5px; 
+   } 
+   .head nav div > a, 
+   .head .login a { 
+    font-size: 1.2em; 
+    padding: 30px 10px; 
+   }
+
+/* ---------------------------- section ----------------------------- */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 100px 0;
+    margin-top: 100px;
+}
+
+section .tab-content p {
+    margin-top: 20px;
+    text-indent: 30px;
+    text-align: justify;
+    text-align-last: left;
+}
+
+section a.btn {
+    font-size: 1.6em;
+    padding-top: 0;
+}
+
+.row-flex {
+    display: flex;
+    justify-content: center; /* Центрирует изображения */
+    gap: 15px; /* Расстояние между изображениями */
+    margin: 20px 0;
+}
+
+.row-flex img {
+    width: 300px; /* Фиксированная ширина */
+    height: 350px; /* Фиксированная высота */
+    object-fit: cover; /* Обрезает изображение по размеру, сохраняя содержимое */
+    border-radius: 10px; /* Закруглённые углы (опционально) */
+}
+
+
+
+.mySectionImg {
+    position: relative;
+    background-image: url('img/jailau.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 80% 0;
+    width: 100%;
+    height: 400px;
+}
+
+.row.flex-row {
+    display: flex;
+    justify-content: space-between; /* Равномерное распределение карточек */
+    gap: 15px; /* Небольшие отступы между карточками */
+    margin-bottom: 20px; /* Отступ между рядами */
+}
+
+.myCard {
+    position: relative;
+    flex: 1; /* Каждый элемент будет иметь одинаковую ширину */
+    min-width: 0; /* Чтобы избежать переполнения */
+    padding-top: 90px;
+    background-color: #3cd68e;
+    text-align: center;
+    box-sizing: border-box; /* Чтобы padding не выходил за пределы */
+    height: 300px; /* Высота карточки */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Дополнительные стили для текста внутри карточек */
+.myCard p {
+    font-size: 1.5em;
+    color: white;
+    margin: 0;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.myCard:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.text {
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-12%, 20%);
+    text-align: center;
+}
+
+/* Стили для кнопок */
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between; /* Размещает кнопки по краям */
+    align-items: center; /* Выравнивает кнопки по вертикали */
+    margin-top: 20px;
+}
+
+.previous-button .btn, .next-button .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.previous-button .btn:hover, .next-button .btn:hover {
+    background-color: #555;
+}
+
+  
+  
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links a, .footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-social a:hover {
+    text-decoration: underline;
+}
